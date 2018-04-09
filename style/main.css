@@ -1,0 +1,201 @@
+/* GENERAL STYLES */
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'InputMonoEL', sans-serif;
+  font-size: 4.5vh;
+  line-height: 1.3;
+  letter-spacing: 2px;
+  color: #1B1B26;
+
+  background-color: #F1E2D0;
+  height: 110vh;
+}
+
+a {
+  color: #1B1B26;
+  text-decoration: none;
+}
+
+a:hover {
+  text-shadow: 3px 5px #F7DF3E;
+}
+
+img {
+  width: 100%;
+}
+
+.image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F1E2D0;
+  background-blend-mode: overlay;
+}
+
+.emoji.large {
+  height: 48px;
+  width: 48px;
+}
+
+.emoji {
+  height: 32px;
+  width: 32px;
+}
+
+.njons {
+  background-image: url("../img/IMG_4675.jpg");
+}
+
+.lab {
+  background-image: url("../img/photo.jpg");
+}
+
+.drawing {
+  background-image: url("../img/CIMG2627.jpg");
+}
+
+.oxford {
+  background-image: url("../img/CIMG3570.jpg");
+}
+
+.aso {
+  background-image: url("../img/IMG_0736.jpg");
+}
+
+.sthlm {
+  background-image: url("../img/photo 2-4.jpg");
+}
+
+.travel {
+  background-image: url("../img/IMG_3387.jpg");
+}
+
+.writer {
+  background-image: url("../img/IMG_3838.jpg");
+}
+
+.programmer {
+  background-image: url("../img/IMG_4777.jpg");
+}
+
+.btn {
+  margin: auto;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  outline-style: none;
+
+  padding: 3vw 4vw;
+  font-size: 3vh;
+
+  background-color: white;
+  box-shadow: 1vw 1vw #F7DF3E;
+  color: #1B1B26;
+}
+
+button:hover {
+  box-shadow: 0px 0px white;
+  transform: translate(1vw, 1vw);
+  cursor: pointer;
+}
+
+.true,
+.false {
+  margin: 40px;
+}
+
+.true button:hover,
+.false button:hover {
+  background-color: #F7DF3E;
+}
+
+
+/* GENERAL STRUCTURE */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.margin {
+  margin: 0 50px;
+}
+
+/* HEADER */
+
+header {
+  padding: 3vh 0;
+  text-shadow: 3px 5px #F7DF3E;
+}
+
+
+/* SECTION: CONTENT PANEL */
+.container,
+.panel,
+.answer,
+.description,
+.col {
+  flex: 1;
+}
+
+.panel p {
+  margin-top: auto;
+}
+
+.description p {
+  padding: 3vh 0;
+  font-size: 3vh;
+  margin: 3vh auto;
+}
+
+.description a {
+  margin: auto;
+}
+
+.answer {
+  margin: 3vh;
+}
+.answer p {
+  font-size: 3vh;
+  padding: 1vh 0;
+}
+
+.options {
+  display: flex;
+  margin: auto;
+}
+
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  font-size: 2vh;
+  line-height: 1.2;
+}
+
+ul.links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  padding-right: 30px;
+}
+
+li.about {
+  margin-left: auto;
+  padding-right: 0px;
+}
