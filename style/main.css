@@ -7,9 +7,9 @@ body {
   line-height: 1.3;
   letter-spacing: 2px;
   color: #1B1B26;
-
   background-color: #F1E2D0;
-  height: 110vh;
+  overflow: hidden;
+  height: 100vh;
 }
 
 a {
@@ -19,6 +19,10 @@ a {
 
 a:hover {
   text-shadow: 3px 5px #F7DF3E;
+}
+
+section {
+  height: 100vh;
 }
 
 img {
@@ -99,6 +103,7 @@ button {
 button:hover {
   box-shadow: 0px 0px white;
   transform: translate(1vw, 1vw);
+  transition: transform 0.5s ease;
   cursor: pointer;
 }
 
@@ -137,13 +142,13 @@ header {
 }
 
 
-/* SECTION: CONTENT PANEL */
+/* CONTENT */
 .container,
 .panel,
 .answer,
-.description,
-.col {
+.description {
   flex: 1;
+  height: 100%;
 }
 
 .panel p {
