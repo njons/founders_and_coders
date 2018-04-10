@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nathalie Jonsson's application to founders & coders.">
   <title>Who is Nathalie Jonsson?</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/main.css">
@@ -12,12 +13,12 @@
 
 <body class="flex">
 
-  <section id="index">
+  <section id="index" data-name="index" class="show">
     <div class="container flex">
       <header class="margin">
-        <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
-        </a>
+        <span data-target="index">
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+        </span>
       </header>
 
       <div class="container margin panel flex">
@@ -25,11 +26,10 @@
           <p class="extra-light">Try to guess which of the follwing facts about me are true or false.</p>
 
           <div class="btn">
-            <a href="#fact_1">
-              <button class="medium"><img class="emoji" src="img/emoji/arm.png"> Bring it on!</button>
-            </a>
+            <span data-target="fact_1">
+              <button class="medium"><img class="emoji" alt="flexing arm emoji" src="img/emoji/arm.png"> Bring it on!</button>
+            </span>
           </div>
-
         </div>
       </div>
     </div>
@@ -37,116 +37,116 @@
     <footer>
       <nav class="container">
         <ul class="links margin">
-          <li><a href="https://www.codewars.com/users/njons">Codewars</a></li>
-          <li><a href="https://www.freecodecamp.org/njons">freeCodeCamp</a></li>
-          <li><a href="https://github.com/njons/">GitHub</a></li>
-          <li class="about"><a href="#about">About</a></li>
+          <li><span href="https://www.codewars.com/users/njons">Codewars</span></li>
+          <li><span href="https://www.freecodecamp.org/njons">freeCodeCamp</span></li>
+          <li><span href="https://github.com/njons/founders_and_coders">GitHub</span></li>
+          <li class="about"><span data-target="about">About</span></li>
         </ul>
       </nav>
     </footer>
   </section>
 
-  <section id="fact_1">
+  <section data-name="fact_1">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I grew up right here in London</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I grew up right here in London</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_1_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_1_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_1_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_1_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
-
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section  id="fact_1_true">
+  <section data-name="fact_1_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image sthlm">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Good guess, but you’re wrong.<img class="emoji" src="img/emoji/incorrect_1.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
+          <p class="extra-light">Good guess, but you’re wrong.<img class="emoji" alt="crying emoji" src="img/emoji/incorrect_1.png"></p>
           <p class="extra-light">I was born and raised in Stockholm, Sweden. However, at this point I have spent 8 years London, which could be considered a short lifetime.</p>
 
           <div class="btn">
-            <a href="#fact_3">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_3">
+              <button class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section  id="fact_1_false">
+  <section data-name="fact_1_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image sthlm">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed:  False</p>
-          <p class="extra-light">You're right! <img class="emoji" src="img/emoji/correct_1.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed:  False</p>
+          <p class="extra-light">You're right! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_1.png"></p>
           <p class="extra-light">I was born and raised in Stockholm, Sweden. Hence, I have excellent coping skills, such as surviving months with very short days and other months with very short nights.</p>
 
           <div class="btn">
-            <a href="#fact_2">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_2">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_2">
+  <section data-name="fact_2">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
+
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I studied language in secondary school</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I studied language in secondary school</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_2_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_2_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_2_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_2_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
           </div>
         </div>
@@ -154,77 +154,77 @@
     </div>
   </section>
 
-  <section id="fact_2_true">
+  <section data-name="fact_2_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image travel">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed:  True</p>
-          <p class="extra-light">That’s correct! <img class="emoji" src="img/emoji/correct_2.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed:  True</p>
+          <p class="extra-light">That’s correct! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_2.png"></p>
           <p class="extra-light">Based on a random recommendation from my 6th-grade teacher, I chose to focus on foreign languages in secondary school. Being curious about living abroad, I ended up studying most of what was available: English, French, German and Spanish. Today, I use a lot my foreign language tricks when learning to program.</p>
 
           <div class="btn">
-            <a href="#fact_3">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_3">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_2_false">
+  <section data-name="fact_2_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image travel">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Too bad. That’s wrong. <img class="emoji" src="img/emoji/incorrect_2.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
+          <p class="extra-light">Too bad. That’s wrong. <img class="emoji" alt="crying emoji"  src="img/emoji/incorrect_2.png"></p>
           <p class="extra-light">I did study English, French, German and Spanish in secondary school. It was based in part on a random recommendation from my 6th-grade teacher and in part being curious about living abroad. Today I use my past language tricks to learn programming syntax.</p>
 
           <div class="btn">
-            <a href="#fact_3">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_3">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_3">
+  <section data-name="fact_3">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I got a scholarship for a science degree after secondary school</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I got a scholarship for a science degree after secondary school</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_3_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_3_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_3_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_3_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
           </div>
         </div>
@@ -232,76 +232,76 @@
     </div>
   </section>
 
-  <section id="fact_3_true">
+  <section data-name="fact_3_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image aso">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">I wish! <img class="emoji" src="img/emoji/incorrect_3.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
+          <p class="extra-light">I wish! <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_3.png"></p>
           <p class="extra-light">After focusing on language in secondary school, I did not qualify for a University science degree. So I spent a year in adult education catching up on all the required basic science. We had exams every week and at the end of the year we wre onl 8 people left.</p>
 
           <div class="btn">
-            <a href="#fact_4">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_4">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_3_false">
+  <section data-name="fact_3_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image aso">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Yeah, you’re right. <img class="emoji" src="img/emoji/correct_3.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
+          <p class="extra-light">Yeah, you’re right. <img class="emoji" alt="smiling emoji" src="img/emoji/correct_3.png"></p>
           <p class="extra-light"> Nothing about switching from a secondary school degree in foreign languages to a University degree in natural science was easy. I signed up for an intense year of catching up on the required basic science and weekly exams. I was one of 8 people who completed the course.</p>
           <div class="btn">
-            <a href="#fact_4">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_4">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_4">
+  <section data-name="fact_4">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I have an MSc in Molecular Biology</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I have an MSc in Molecular Biology</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_4_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_4_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_4_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_4_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
           </div>
         </div>
@@ -309,24 +309,24 @@
     </div>
   </section>
 
-  <section id="fact_4_true">
+  <section data-name="fact_4_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image drawing">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Yup, true <img class="emoji" src="img/emoji/correct_4.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
+          <p class="extra-light">Yup, true <img class="emoji" alt="smiling emoji" src="img/emoji/correct_4.png"></p>
           <p class="extra-light">I applied because I thought it sounded cool, but it turns out that I am really fascinated by what was covered (how DNA and cells work). It was also the perfect match for my lifelong passion for forensics and murder mysteries.</p>
 
           <div class="btn">
-            <a href="#fact_5">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_5">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
 
         </div>
@@ -334,53 +334,53 @@
     </div>
   </section>
 
-  <section id="fact_4_false">
+  <section data-name="fact_4_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image drawing">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">No, I do have this degree. <img class="emoji" src="img/emoji/incorrect_4.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
+          <p class="extra-light">No, I do have this degree. <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_4.png"></p>
           <p class="extra-light">I thought it sounded really cool and applied for it, but it turned out that I was actually really into DNA and cells that we studied. I have also been into forensics and murder mysteries since a very young age. Lucky me!</p>
 
           <div class="btn">
-            <a href="#fact_5">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_5">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_5">
+  <section data-name="fact_5">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I have a PhD in Molecular Biology</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I have a PhD in Molecular Biology</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_5_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_5_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_5_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_5_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
           </div>
         </div>
@@ -388,153 +388,154 @@
     </div>
   </section>
 
-  <section id="fact_5_true">
+  <section data-name="fact_5_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
+
       <div class="container margin flex image lab">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Sorry you're wrong. <img class="emoji" src="img/emoji/incorrect_5.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
+          <p class="extra-light">Sorry you're wrong. <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_5.png"></p>
           <p class="extra-light">This might be where most would expect the story to go (I know my mom did), but unlike most of my classmates, I never applied for a PhD position. The closest I ever got was 10 months of laboratory work to complete my MSc.</p>
 
           <div class="btn">
-            <a href="#fact_6">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_6">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_5_false">
+  <section data-name="fact_5_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image lab">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Yes! You’re right! <img class="emoji" src="img/emoji/correct_5.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
+          <p class="extra-light">Yes! You’re right! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_5.png"></p>
           <p class="extra-light">Unlike most of my classmates, I escaped the PhD. The closest to real research I ever got was when I spent 10 months in a laboratory to complete my MSc.</p>
           <div class="btn">
-            <a href="#fact_6">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_6">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_6">
+  <section data-name="fact_6">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I moved to the UK because of an awesome job</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I moved to the UK because of an awesome job</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_6_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_6_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_6_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_6_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_6_true">
+  <section data-name="fact_6_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image oxford">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Nah, sorry. <img class="emoji" src="img/emoji/incorrect_6.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
+          <p class="extra-light">Nah, sorry. <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_6.png"></p>
           <p class="extra-light">I moved to the UK to spend 10 months working in a laboratory and collect data to write my thesis so I could complete my MSc. I remained here because my boyfriend has enrolled in Art School in London. </p>
 
           <div class="btn">
-            <a href="#fact_7">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_7">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_6_false">
+  <section data-name="fact_6_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image oxford">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Spot on! <img class="emoji" src="img/emoji/correct_6.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
+          <p class="extra-light">Spot on! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_6.png"></p>
           <p class="extra-light">I actually moved to the UK to do the 10 months of laboratory work I needed to write my thesis and complete my MSc. I stayed on because my boyfriend had enrolled in Art School in London. I have lived here since. </p>
 
           <div class="btn">
-            <a href="#fact_7">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_7">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_7">
+  <section data-name="fact_7">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
+
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I am a professional writer</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I am a professional writer</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_7_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_7_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_7_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_7_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
           </div>
         </div>
@@ -542,77 +543,77 @@
     </div>
   </section>
 
-  <section id="fact_7_true">
+  <section data-name="fact_7_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image writer">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">You betcha! <img class="emoji" src="img/emoji/correct_7.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
+          <p class="extra-light">You betcha! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_7.png"></p>
           <p class="extra-light">I've been a writer in the communications industry for 7 years. My favourite challenge is to make dull scientific data exciting to the relevant audience through storytelling.</br></br>I love writing for digital platforms the most because you can experiment with user interaction and think about communication beyond just words.</p>
 
           <div class="btn">
-            <a href="#fact_8">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_8">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_7_false">
+  <section data-name="fact_7_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image writer">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">No, I really am a writer! <img class="emoji" src="img/emoji/incorrect_7.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
+          <p class="extra-light">No, I really am a writer! <img class="emoji" alt="cryinging emoji"  src="img/emoji/incorrect_7.png"></p>
           <p class="extra-light">Over the past 7 years, I was a writer In the communications industry. I found my passion for storytelling and identifying key facts for specific audiences. I love writing for digital platforms because you get to think about user impact beyond the copy. </p>
 
           <div class="btn">
-            <a href="#fact_8">
-              <button class="medium"><img class="emoji" src="img/emoji/next.png"> Next fact</button>
-            </a>
+            <span data-target="fact_8">
+              <button class="medium"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_8">
+  <section data-name="fact_8">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex">
         <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/question.png"> I will be a programmer</p>
+          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I will be a programmer</p>
 
           <div class="options">
             <div class="true">
-              <a href="#fact_8_true">
-                <button class="medium">True <img class="emoji" src="img/emoji/true.png"></button>
-              </a>
+              <span data-target="fact_8_true">
+                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
+              </span>
             </div>
 
             <div class="false">
-              <a href="#fact_8_false">
-                <button class="medium">False <img class="emoji" src="img/emoji/false.png"></button>
-              </a>
+              <span data-target="fact_8_false">
+                <button class="medium">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
+              </span>
             </div>
           </div>
         </div>
@@ -620,72 +621,72 @@
     </div>
   </section>
 
-  <section id="fact_8_true">
+  <section data-name="fact_8_true">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image programmer">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Yes! Correct! <img class="emoji" src="img/emoji/correct_9.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
+          <p class="extra-light">Yes! Correct! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_9.png"></p>
           <p class="extra-light">I might be at the start of my journey and not be a fully fledged programmer yet, but I will be one day.  Judging by my past I complete the projects I set for myself and I am not afraid of switching disciplines. I cannot wait to add "programmer" to my list of skills.</p>
 
           <div class="btn">
-            <a href="#thank_you">
+            <span data-target="thank_you">
               <button class="medium"><img class="emoji" src="img/emoji/thank_you.png"> Thank you</button>
-            </a>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="fact_8_false">
+  <section data-name="fact_8_false">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex image programmer">
         <div class="answer flex">
-          <p class="medium"><img class="emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">How dare you doubt me! <img class="emoji" src="img/emoji/incorrect_8.png"></p>
+          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
+          <p class="extra-light">How dare you doubt me! <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_8.png"></p>
           <p class="extra-light">Although I guess you are right, I am not a programmer yet, but I will be one day. In my past, I have switched disciplines and managed to complete the challenges I have set for myself and I am excited to add "programmer" to my skills.  </p>
 
           <div class="btn">
-            <a href="#thank_you">
+            <span data-target="thank_you">
               <button class="medium"><img class="emoji" src="img/emoji/thank_you.png"> Thank you</button>
-            </a>
+            </span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="thank_you">
+  <section data-name="thank_you">
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin flex">
         <div class="answer flex">
-          <p class="medium"><img class="emoji large" src="img/emoji/thank_you.png"> Thanks for clicking to the end of this website.</p>
+          <p class="medium"><img class="emoji large" alt="raised hands emoji"  src="img/emoji/thank_you.png"> Thanks for clicking to the end of this website.</p>
           <p class="extra-light">Hopefully you have learned a fact or two about me and consider me a potential candidate and a future programmer.</p>
-          <p class="extra-light"><img class="emoji" src="img/emoji/correct_8.png"> Let's make it happen!</p>
+          <p class="extra-light"><img class="emoji" alt="face wearing sunglasses emoji" src="img/emoji/correct_8.png"> Let's make it happen!</p>
 
           <div class="btn">
-            <a href="#index">
-              <button class="medium"><img class="emoji" src="img/emoji/back.png"> Start over</button>
-            </a>
+            <span data-target="index">
+              <button class="medium"><img class="emoji" alt="finger pointing left emoji"  src="img/emoji/back.png"> Start over</button>
+            </span>
           </div>
         </div>
       </div>
@@ -696,13 +697,13 @@
     <div class="container flex">
       <header class="margin">
         <a href="#index">
-          <h1 class="bold"> <img class="emoji large" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
+          <h1 class="bold"> <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:</br> Who is Nathalie Jonsson? </h1>
         </a>
       </header>
 
       <div class="container margin panel flex image njons">
         <div class="answer">
-          <p class="extra-light"><img class="emoji large" src="img/emoji/wave.png">	Welcome!<img class="emoji" src="img/emoji/cartwheel.png"></p>
+          <p class="extra-light"><img class="emoji large" alt="waving hand emoji" src="img/emoji/wave.png">	Welcome!<img class="emoji" alt="cartwheeling emoji"  src="img/emoji/cartwheel.png"></p>
           <p class="extra-light"> This is the website I have built as part of my application to Founders & Coders.</p>
           <p class="extra-light">	I am an aspiring Web Developer with a background as a Writer in the communications industry.</p>
           <p class="extra-light">Over the years my interest for digital platforms has grown because, unlike a printed booklet, digital media offers the possibility to create interactive experineces beyond just the words and copy.
@@ -712,5 +713,6 @@
     </div>
   </section>
 
+  <script src="script/main.js"></script>
 </body>
 </html>

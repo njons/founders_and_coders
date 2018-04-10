@@ -1,4 +1,4 @@
-/* GENERAL STYLES */
+/* GENERAL STRUCTURE */
 
 body {
   -webkit-font-smoothing: antialiased;
@@ -8,9 +8,32 @@ body {
   letter-spacing: 2px;
   color: #1B1B26;
   background-color: #F1E2D0;
-  overflow: hidden;
-  height: 100vh;
 }
+
+section {
+  height: 100vh;
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.margin {
+  margin: 0 50px;
+}
+
+.show {
+  display: flex;
+}
+
+/* LINK STYLES */
 
 a {
   color: #1B1B26;
@@ -21,10 +44,7 @@ a:hover {
   text-shadow: 3px 5px #F7DF3E;
 }
 
-section {
-  height: 100vh;
-}
-
+/* IMAGE STYLES */
 img {
   width: 100%;
 }
@@ -83,6 +103,8 @@ img {
   background-image: url("../img/IMG_4777.jpg");
 }
 
+/* BUTTON STYLES */
+
 .btn {
   margin: auto;
 }
@@ -117,32 +139,14 @@ button:hover {
   background-color: #F7DF3E;
 }
 
-
-/* GENERAL STRUCTURE */
-
-.flex {
-  display: flex;
-  flex-direction: column;
-}
-
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.margin {
-  margin: 0 50px;
-}
-
-/* HEADER */
+/* HEADER STYLES */
 
 header {
   padding: 3vh 0;
   text-shadow: 3px 5px #F7DF3E;
 }
 
-
-/* CONTENT */
+/* CONTENT STYLES */
 .container,
 .panel,
 .answer,
@@ -178,8 +182,7 @@ header {
   margin: auto;
 }
 
-
-/* FOOTER */
+/* FOOTER STYLES */
 
 footer {
   position: fixed;
