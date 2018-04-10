@@ -195,6 +195,7 @@ footer {
   background-color: white;
   font-size: 2vh;
   line-height: 1.2;
+  z-index: 10;
 }
 
 ul.links {
