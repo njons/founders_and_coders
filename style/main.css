@@ -58,13 +58,15 @@ img {
 }
 
 .emoji.large {
-  height: 48px;
-  width: 48px;
+  height: 5vh;
+  width: 5vh;
 }
 
 .emoji {
-  height: 32px;
-  width: 32px;
+  height: 4vh;
+  width: 4vh;
+  position: relative;
+  top: 0.75vh;
 }
 
 .njons {
