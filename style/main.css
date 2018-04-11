@@ -13,6 +13,7 @@ body {
 section {
   height: 80vh;
   display: none;
+  overflow-y: scroll;
 }
 
 .flex {
@@ -21,7 +22,7 @@ section {
 }
 
 .container {
-  max-width: 900px;
+  max-width: 90vh;
   margin: 0 auto;
 }
 
@@ -153,7 +154,7 @@ button:hover {
 header {
   padding: 3vh 0;
   text-shadow: 3px 5px #F7DF3E;
-  width: 900px;
+  max-width: 90vh;
   max-width: 100%;
   margin: 0 auto;
 }
