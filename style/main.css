@@ -182,7 +182,9 @@ header {
   margin: auto;
 }
 
-.answer {
+.description,
+.answer,
+.panel {
   margin: 1vh 3vh;
 }
 
