@@ -13,7 +13,6 @@ body {
 section {
   height: 80vh;
   display: none;
-  overflow-y: scroll;
 }
 
 .flex {
@@ -165,7 +164,7 @@ header {
 .answer,
 .description {
   flex: 1;
-  height: 100%;
+  /* height: 100%; */
 }
 
 .panel p {
@@ -229,4 +228,43 @@ li {
 li.about {
   margin-left: auto;
   padding-right: 0px;
+}
+
+@media(max-width: 1100px) {
+  body {
+    font-size: 5vw;
+  }
+
+  .emoji.large {
+    height: 5vw;
+    width: 5vw;
+  }
+
+  .emoji {
+    height: 4vw;
+    width: 4vw;
+  }
+  .panel p {
+    margin-top: auto;
+  }
+
+  .description p {
+    padding: 3vw 0;
+    font-size: 3vw;
+    margin: 3vw auto;
+  }
+
+  .answer p {
+    font-size: 3vw;
+    padding: 1vw 0;
+  }
+
+  button {
+    font-size: 3vw;
+  }
+
+  footer {
+    font-size: 2vw;
+  }
+
 }
