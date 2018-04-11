@@ -243,7 +243,18 @@ li.about {
   .emoji {
     height: 4vw;
     width: 4vw;
+    position: relative;
+    top: 0.25vh;
   }
+
+  .container .panel {
+    margin: 0 3vw;
+  }
+
+  .description {
+    margin: 0;
+  }
+
   .panel p {
     margin-top: auto;
   }
