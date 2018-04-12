@@ -11,14 +11,11 @@
 </head>
 
 
-<body class="flex">
-
-    <header>
-      <div class='container margin panel flex'>
-        <span data-target="index">
-          <h1 class="bold"><img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:<br> Who is Nathalie Jonsson? </h1>
-        </span>
-      </div>
+<body>
+    <header data-target="index">
+      <h1 class="bold">
+        <img class="emoji large" alt="thinking face emoji" src="img/emoji/thinking.png"> True or false:<br> Who is Nathalie Jonsson?
+      </h1>
     </header>
 
     <footer>
@@ -33,493 +30,576 @@
     </footer>
 
   <section data-name="index" class="show">
-    <div class="container flex">
+      <div class="content">
+        <h3 class="extra-light">Try to guess which of the following facts about me are true or false.</h3>
 
-      <div class="container margin flex">
-        <div class="description flex">
-          <p class="extra-light">Try to guess which of the follwing facts about me are true or false.</p>
-
-          <div class="btn">
-            <button class="medium" data-target="fact_1"><img class="emoji" alt="flexing arm emoji" src="img/emoji/arm.png"> Bring it on!</button>
-          </div>
+        <div class="btn">
+          <button class="medium" data-target="fact_1">
+            <img class="emoji" alt="flexing arm emoji" src="img/emoji/arm.png"> Bring it on!
+          </button>
         </div>
+
       </div>
-    </div>
   </section>
 
   <section data-name="fact_1">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I grew up right here in London</p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I grew up right here in London
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <span data-target="fact_1_true">
-                <button class="medium">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-              </span>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_1_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_1_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_1_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_1_true">
-    <div class="container flex">
-      <div class="container margin flex image sthlm">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Good guess, but you’re wrong.<img class="emoji" alt="crying emoji" src="img/emoji/incorrect_1.png"></p>
-          <p class="extra-light">I was born and raised in Stockholm, Sweden.</p>
-          <p class="extra-light">However, at this point, I have spent 8 years in London so you could consider that a short lifetime.</p>
+  <section data-name="fact_1_true" class="image sthlm">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">Good guess, but you’re wrong.
+        <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_1.png">
+      </p>
+      <p class="extra-light">I was born and raised in Stockholm, Sweden.</p>
+      <p class="extra-light">However, at this point, I have spent 8 years in London so you could consider that a short lifetime.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_2"><img class="emoji" alt="thumbs up emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_2">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br><br><br><br>
     </div>
   </section>
 
-  <section data-name="fact_1_false">
-    <div class="container flex">
-      <div class="container margin flex image sthlm">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False</p>
-          <p class="extra-light">You're right! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_1.png"></p>
-          <p class="extra-light">I was born and raised in Stockholm, Sweden.</p>
-          <p class="extra-light"> Although, I probably should add that at this point I have lived in London for a siginifcant number of years (8 years!).</p>
+  <section data-name="fact_1_false" class="image sthlm">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">You're right!
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_1.png">
+      </p>
+      <p class="extra-light">I was born and raised in Stockholm, Sweden.</p>
+      <p class="extra-light"> Although, I probably should add that at this point I have lived in London for a siginifcant number of years (8 years!).</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_2"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_2">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
+
 
   <section data-name="fact_2">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I studied language in secondary school</p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I studied language in secondary school
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <button class="medium" data-target="fact_2_true">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_2_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_2_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_2_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_2_true">
-    <div class="container flex">
-      <div class="container margin flex image travel">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed:  True</p>
-          <p class="extra-light">That’s correct! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_2.png"></p>
-          <p class="extra-light">Based on a random recommendation from my 6th-grade teacher, I chose to focus on foreign languages in secondary school.</p>
-          <p class="extra-light">Being curious about living abroad, I ended up studying most of what was available: English, French, German and Spanish.</p>
-          <p class="extra-light">Today, I use a lot of the same study techniques when learning to program.</p>
+  <section data-name="fact_2_true" class="image travel">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">That’s correct!
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_2.png">
+      </p>
+      <p class="extra-light">Based on a random recommendation from my 6th-grade teacher, I chose to focus on foreign languages in secondary school.</p>
+      <p class="extra-light">Being curious about living abroad, I ended up studying most of what was available: English, French, German and Spanish.</p>
+      <p class="extra-light">Today, I use a lot of the same study techniques when learning to program.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_3"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_3">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
 
-  <section data-name="fact_2_false">
-    <div class="container flex">
-      <div class="container margin flex image travel">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Too bad. That’s wrong. <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_2.png"></p>
-          <p class="extra-light">I did study English, French, German and Spanish in secondary school.</p>
-          <p class="extra-light">It was based in part on a random recommendation from my 6th-grade teacher and in part being curious about living abroad.
-          <p class="extra-light">Today I use my past grammar study techniques to learn programming syntax.</p>
+  <section data-name="fact_2_false" class="image travel">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">Too bad. That’s wrong.
+        <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_2.png">
+      </p>
+      <p class="extra-light">I did study English, French, German and Spanish in secondary school.</p>
+      <p class="extra-light">It was based in part on a random recommendation from my 6th-grade teacher and in part being curious about living abroad.
+      <p class="extra-light">Today I use my past grammar study techniques to learn programming syntax.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_3"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_3">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
+
 
   <section data-name="fact_3">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I got a scholarship for a science degree after secondary school </p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I got a scholarship for a science degree after secondary school
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <button class="medium" data-target="fact_3_true">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_3_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_3_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_3_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_3_true">
-    <div class="container flex">
-      <div class="container margin flex image aso">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">I wish! <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_3.png"></p>
-          <p class="extra-light">Having focused on language and social science in secondary school, I did not qualify for a University science degree.</p>
-          <p class="extra-light">So I spent an <span class="extra-light-italic">intense</span> year in adult education catching up on all the required basic science.
-          <p class="extra-light">We had exams every week and out of the 48 people who enrolled we were only 8 graduates at the end of the year.</p>
+  <section data-name="fact_3_true" class="image aso">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">I wish!
+        <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_3.png">
+      </p>
+      <p class="extra-light">Having focused on language and social science in secondary school, I did not qualify for a University science degree.</p>
+      <p class="extra-light">So I spent an <span class="extra-light-italic">intense</span> year in adult education catching up on all the required basic science.
+      <p class="extra-light">We had exams every week and out of the 48 people who enrolled we were only 8 graduates at the end of the year.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_4"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_4">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
 
-  <section data-name="fact_3_false">
-    <div class="container flex">
-      <div class="container margin flex image aso">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Yeah, you’re right. <img class="emoji" alt="smiling emoji" src="img/emoji/correct_3.png"></p>
-          <p class="extra-light"> I did the opposite, as I had a degree in social scinece, I signed up for an <span class="extra-light-italic">intense</span> year of basic science to qualify for a University level scinece degree.</p>
-          <p class="extra-light">Nothing about it was easy. We had weekly exams and at the end of the year we were only 8 graduets remaiming out of the 48  people who initally enrolled.</p>
+  <section data-name="fact_3_false" class="image aso">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">Yeah, you’re right.
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_3.png">
+      </p>
+      <p class="extra-light"> I did the opposite, as I had a degree in social science, I signed up for an <span class="extra-light-italic">intense</span> year of basic science to qualify for a University level science degree.</p>
+      <p class="extra-light">Nothing about it was easy. We had weekly exams and at the end of the year we were only 8 graduates remaining out of the 48  people who initially enrolled.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_4"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_4">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
+
 
   <section data-name="fact_4">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I have an MSc in Molecular Biology from Stockholm University</p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I have an MSc in Molecular Biology from Stockholm University
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <button class="medium" data-target="fact_4_true">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_4_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_4_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_4_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_4_true">
-    <div class="container flex">
-      <div class="container margin flex image drawing">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Yup, true <img class="emoji" alt="smiling emoji" src="img/emoji/correct_4.png"></p>
-          <p class="extra-light">I applied to this degree because it sounded really cool and I thought that DNA would somehow lay the foundation of some sort of future industry...<img class="emoji" alt="shrugging emoji" src="img/emoji/shrug.png"></p>
-          <p class="extra-light">I was wrong, the future was clearly in the web, but I did discover a fascination for how DNA and cells work. And it was the perfect match for my lifelong passion for forensics and murder mysteries.</p>
+  <section data-name="fact_4_true" class="image drawing">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">Yup, true
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_4.png">
+      </p>
+      <p class="extra-light">I applied to this degree because it sounded really cool and I thought that DNA would somehow lay the foundation of some sort of future industry...
+        <img class="emoji" alt="shrugging emoji" src="img/emoji/shrug.png">
+      </p>
+      <p class="extra-light">I was wrong, the future was clearly in the web, but I did discover a fascination for how DNA and cells work. And it was the perfect match for my lifelong passion for forensics and murder mysteries.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_5"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_5">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
 
-  <section data-name="fact_4_false">
-    <div class="container flex">
-      <div class="container margin flex image drawing">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">But you're wrong. <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_4.png"></p>
-          <p class="extra-light">I applied becasue the degree sounded really cool and we were told that "DNA was the future"...<img class="emoji" alt="shrugging emoji" src="img/emoji/shrug.png"></p>
-          <p class="extra-light">They were wrong about that last thing, but I got to discover that I was actually really into DNA and cells and that it tied in perfectly with my love for forensics and murder mysteries.</p>
-          <p class="extra-light">Lucky me!<img class="emoji" alt="two glasses of champagne emoji" src="img/emoji/champagne.png"></p>
+  <section data-name="fact_4_false" class="image drawing">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">But you're wrong.
+        <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_4.png">
+      </p>
+      <p class="extra-light">I applied because the degree sounded really cool and we were told that "DNA was the future"...
+        <img class="emoji" alt="shrugging emoji" src="img/emoji/shrug.png">
+      </p>
+      <p class="extra-light">They were wrong about that last thing, but I got to discover that I was actually really into DNA and cells and that it tied in perfectly with my love for forensics and murder mysteries.</p>
+      <p class="extra-light">Lucky me!
+        <img class="emoji" alt="two glasses of champagne emoji" src="img/emoji/champagne.png">
+      </p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_5"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_5">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
+
 
   <section data-name="fact_5">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I have a PhD in Molecular Biology</p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I have a PhD in Molecular Biology
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <button class="medium" data-target="fact_5_true">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_5_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_5_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_5_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_5_true">
-    <div class="container flex">
-      <div class="container margin flex image lab">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Sorry you're wrong. <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_5.png"></p>
-          <p class="extra-light">This might be where most would expect the story to go (I know my mom did), but unlike most of my classmates I never got a PhD position.</p>
-          <p class="extra-light">The closest I ever got was 10 months of laboratory work to complete my MSc.</p>
-          <p class="extra-light">That was enough!<img class="emoji" alt="finger gesturing ok emoji" src="img/emoji/ok.png"></p>
+  <section data-name="fact_5_true" class="image lab">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">Sorry you're wrong.
+        <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_5.png">
+      </p>
+      <p class="extra-light">This might be where most would expect the story to go (I know my mom did), but unlike most of my classmates I never got a PhD position.</p>
+      <p class="extra-light">The closest I ever got was 10 months of laboratory work to complete my MSc.</p>
+      <p class="extra-light">That was enough!
+        <img class="emoji" alt="finger gesturing ok emoji" src="img/emoji/ok.png">
+      </p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_6"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_6">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
 
-  <section data-name="fact_5_false">
-    <div class="container flex">
-      <div class="container margin flex image lab">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Yes! You’re right! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_5.png"></p>
-          <p class="extra-light">Unlike most of my classmates, I escaped the PhD.</p>
-          <p class="extra-light">The closest to real research I ever got was when I spent 10 months in a laboratory to complete my MSc.</p>
-          <p class="extra-light">No regrets!<img class="emoji" alt="sign of the horns hand emoji" src="img/emoji/no_regrets.png"></p>
-          <div class="btn">
-            <button class="medium" data-target="fact_6"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+  <section data-name="fact_5_false" class="image lab">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">Yes! You’re right!
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_5.png">
+      </p>
+      <p class="extra-light">Unlike most of my classmates, I escaped the PhD.</p>
+      <p class="extra-light">The closest to real research I ever got was when I spent 10 months in a laboratory to complete my MSc.</p>
+      <p class="extra-light">No regrets!
+        <img class="emoji" alt="sign of the horns hand emoji" src="img/emoji/no_regrets.png"></p>
+
+      <div class="btn">
+        <button class="medium" data-target="fact_6">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
+
 
   <section data-name="fact_6">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I moved to the UK because of an awesome job</p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I moved to the UK because of an awesome job
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <button class="medium" data-target="fact_6_true">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_6_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_6_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_6_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_6_true">
-    <div class="container flex">
-      <div class="container margin flex image oxford">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Nah, sorry. <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_6.png"></p>
-          <p class="extra-light">I moved to the UK to spend 10 months working in a laboratory in Oxford collecting data and writing my thesis so I could complete my MSc.</p>
-          <p class="extra-light">I remained here because my boyfriend had enrolled in Art School in London.</p>
-          <p class="extra-light">Eight years later we are still here.</p>
+  <section data-name="fact_6_true" class="image oxford">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">Nah, sorry.
+        <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_6.png">
+      </p>
+      <p class="extra-light">I moved to the UK to spend 10 months working in a laboratory in Oxford collecting data and writing my thesis so I could complete my MSc.</p>
+      <p class="extra-light">I remained here because my boyfriend had enrolled in Art School in London.</p>
+      <p class="extra-light">Eight years later we are still here.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_7"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_7">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
 
-  <section data-name="fact_6_false">
-    <div class="container flex">
-      <div class="container margin flex image oxford">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">Spot on! There was no job. <img class="emoji" alt="smiling emoji" src="img/emoji/correct_6.png"></p>
-          <p class="extra-light">I actually moved to the UK to do the 10 months of laboratory work I needed to write my thesis and complete my MSc.</p>
-          <p class="extra-light">I stayed on because my boyfriend had enrolled in Art School in London.</p>
-          <p class="extra-light">We have lived here since.</p>
+  <section data-name="fact_6_false" class="image oxford">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">Spot on! There was no job.
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_6.png">
+      </p>
+      <p class="extra-light">I actually moved to the UK to do the 10 months of laboratory work I needed to write my thesis and complete my MSc.</p>
+      <p class="extra-light">I stayed on because my boyfriend had enrolled in Art School in London.</p>
+      <p class="extra-light">We have lived here since.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_7"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_7">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+      <br>
     </div>
   </section>
+
 
   <section data-name="fact_7">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I am a professional writer</p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I am a professional writer
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <button class="medium" data-target="fact_7_true">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_7_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_7_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_7_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_7_true">
-    <div class="container flex">
-      <div class="container margin flex image writer">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">You betcha! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_7.png"></p>
-          <p class="extra-light">I've been a Writer in the communications industry for 7 years. My favourite challenge is to make dull scientific data exciting to the relevant audience through storytelling.</p>
-          <p class="extra-light">I love writing for digital platforms the most because you can experiment with user interaction and think about communication beyond just words.</p>
+  <section data-name="fact_7_true" class="image writer">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">You betcha!
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_7.png">
+      </p>
+      <p class="extra-light">I've been a Writer in the communications industry for 7 years. My favourite challenge is to make dull scientific data exciting to the relevant audience through storytelling.</p>
+      <p class="extra-light">I love writing for digital platforms the most because you can experiment with user interaction and think about communication beyond just words.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_8"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_8">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+       <br>
     </div>
   </section>
 
-  <section data-name="fact_7_false">
-    <div class="container flex">
-      <div class="container margin flex image writer">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">No, that's wrong! <img class="emoji" alt="cryinging emoji"  src="img/emoji/incorrect_7.png"></p>
-          <p class="extra-light">Over the past 7 years, I have been a Writer in the communications industry.</p>
-          <p class="extra-light">My favourite challenge is to use for storytelling to highlight key scinetific facts that are relevant to a specific audience.</p>
-          <p class="extra-light">I love writing for digital platforms because you get to think about user impact beyond the copy.</p>
+  <section data-name="fact_7_false" class="image writer">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">No, that's wrong!
+        <img class="emoji" alt="cryinging emoji" src="img/emoji/incorrect_7.png">
+      </p>
+      <p class="extra-light">Over the past 7 years, I have been a Writer in the communications industry.</p>
+      <p class="extra-light">My favourite challenge is to use for storytelling to highlight key scientific facts that are relevant to a specific audience.</p>
+      <p class="extra-light">I love writing for digital platforms because you get to think about user impact beyond the copy.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="fact_8"><img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="fact_8">
+          <img class="emoji" alt="finger pointing to the right emoji" src="img/emoji/next.png"> Next fact
+        </button>
       </div>
+       <br>
     </div>
   </section>
+
 
   <section data-name="fact_8">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="panel flex">
-          <p class="extra-light"><img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I will be a programmer</p>
+    <div class="content">
+      <h2 class="extra-light">
+        <img class="emoji large" alt="speech bubble emoji" src="img/emoji/question.png"> I will be a programmer
+      </h2>
 
-          <div class="options">
-            <div class="true">
-              <button class="medium" data-target="fact_8_true">True <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"></button>
-            </div>
+      <div class="options">
+        <div class="true">
+          <button class="medium" data-target="fact_8_true">True
+            <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png">
+          </button>
+        </div>
 
-            <div class="false">
-              <button class="medium" data-target="fact_8_false">False <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"></button>
-            </div>
-          </div>
+        <div class="false">
+          <button class="medium" data-target="fact_8_false">False
+            <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png">
+          </button>
         </div>
       </div>
     </div>
   </section>
 
-  <section data-name="fact_8_true">
-    <div class="container flex">
-      <div class="container margin flex image programmer">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True</p>
-          <p class="extra-light">Yes! Correct! <img class="emoji" alt="smiling emoji" src="img/emoji/correct_9.png"></p>
-          <p class="extra-light">I might be at the start of my journey and I am not a fully fledged programmer yet, but I will be one day.</p>
-          <p class="extra-light">Judging by my past, I complete the projects I set out for myself and I am not afraid to switch disciplines.</p>
-          <p class="extra-light">I cannot wait to add "programmer" to my list of skills.</p>
+  <section data-name="fact_8_true" class="image programmer">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs up emoji" src="img/emoji/true.png"> You guessed: True
+      </h4>
+      <p class="extra-light">Yes! Correct!
+        <img class="emoji" alt="smiling emoji" src="img/emoji/correct_9.png">
+      </p>
+      <p class="extra-light">I might be at the start of my journey and I am not a fully fledged programmer yet, but I will be one day.</p>
+      <p class="extra-light">Judging by my past, I complete the projects I set out for myself and I am not afraid to switch disciplines.</p>
+      <p class="extra-light">I cannot wait to add "programmer" to my list of skills.</p>
 
-          <div class="btn">
-              <button class="medium" data-target="thank_you"><img class="emoji" src="img/emoji/thank_you.png"> Thank you</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="thank_you">
+          <img class="emoji" src="img/emoji/thank_you.png"> Thank you
+        </button>
       </div>
+       <br>
     </div>
   </section>
 
-  <section data-name="fact_8_false">
-    <div class="container flex">
-      <div class="container margin flex image programmer">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False </p>
-          <p class="extra-light">How dare you doubt me! <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_8.png"></p>
-          <p class="extra-light">Although I guess you are right, I am not a programmer yet, but I will be one day.</p>
-          <p class="extra-light">In my past, I have switched disciplines and managed to complete the challenges I have set for myself</p>
-          <p class="extra-light">I am very excited to add "programmer" to my skills.</p>
+  <section data-name="fact_8_false" class="image programmer">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji" alt="thumbs down emoji" src="img/emoji/false.png"> You guessed: False
+      </h4>
+      <p class="extra-light">How dare you doubt me!
+        <img class="emoji" alt="crying emoji" src="img/emoji/incorrect_8.png">
+      </p>
+      <p class="extra-light">Although I guess you are right, I am not a programmer yet, but I will be one day.</p>
+      <p class="extra-light">In my past, I have switched disciplines and managed to complete the challenges I have set for myself</p>
+      <p class="extra-light">I am very excited to add "programmer" to my skills.</p>
 
-          <div class="btn">
-            <button class="medium" data-target="thank_you"><img class="emoji" src="img/emoji/thank_you.png"> Thank you</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="thank_you">
+          <img class="emoji" src="img/emoji/thank_you.png"> Thank you
+        </button>
       </div>
+       <br>
     </div>
   </section>
+
 
   <section data-name="thank_you">
-    <div class="container flex">
-      <div class="container margin flex">
-        <div class="answer flex">
-          <p class="medium"><img class="emoji large" alt="raised hands emoji"  src="img/emoji/thank_you.png"> Thanks for making it to the end of this website!</p>
-          <p class="extra-light">Hopefully you consider me a potential candidate for Founders & Coders and believe in me as a future programmer.</p>
-          <p class="extra-light"><img class="emoji" alt="face wearing sunglasses emoji" src="img/emoji/correct_8.png"> Let's make it happen!</p>
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji large" alt="raised hands emoji" src="img/emoji/thank_you.png"> Thanks for making it to the end of this website!
+      </h4>
+      <h4 class="extra-light">Hopefully you consider me a potential candidate for Founders & Coders and believe in me as a future programmer.</h4>
+      <h4 class="extra-light">
+        <img class="emoji" alt="face wearing sunglasses emoji" src="img/emoji/correct_8.png"> Let's make it happen!
+      </h4>
 
-          <div class="btn">
-            <button class="medium" data-target="index"><img class="emoji" alt="finger pointing left emoji"  src="img/emoji/back.png"> Start over</button>
-          </div>
-        </div>
+      <div class="btn">
+        <button class="medium" data-target="index">
+          <img class="emoji" alt="finger pointing left emoji" src="img/emoji/back.png"> Start over
+        </button>
       </div>
+       <br>
+
     </div>
   </section>
 
-  <section id="about" data-name="about">
-    <div class="container flex">
-      <div class="container margin panel flex image njons">
-        <div class="answer">
-          <p class="medium"><img class="emoji large" alt="waving hand emoji" src="img/emoji/wave.png">	Welcome!<img class="emoji" alt="cartwheeling emoji"  src="img/emoji/cartwheel.png"></p>
-          <p class="extra-light"> This is the website I have built as part of my application to Founders & Coders.</p>
-          <p class="extra-light"> My name is Nathalie Jonsson and I am an aspiring Web Developer with a background as a Writer in the communications industry.</p>
-          <p class="extra-light">Over the years my interest for digital platforms has grown because, unlike a printed booklet, digital media offers the possibility to create interactive experineces beyond just the words and copy.
-          <p class="extra-light"> I'd like to join a friendly programming community and learn how to build robust solutions to help me explore these types of digital experineces in the future.</p>
 
-          <p class="extra-light-italic">Made with love <img class="emoji" alt="heart emoji"  src="img/emoji/heart.png"> and storytelling <img class="emoji" alt="rainbow emoji"  src="img/emoji/rainbow.png"></p>
-        </div>
-      </div>
+  <section id="about" data-name="about" class="image njons">
+    <div class="content">
+      <h4 class="medium">
+        <img class="emoji large" alt="waving hand emoji" src="img/emoji/wave.png">	Welcome!
+        <img class="emoji" alt="cartwheeling emoji"  src="img/emoji/cartwheel.png">
+      </h4>
+      <p class="extra-light"> This is the website I have built as part of my application to Founders & Coders.</p>
+      <p class="extra-light"> My name is Nathalie Jonsson and I am an aspiring Web Developer with a background as a Writer in the communications industry.</p>
+      <p class="extra-light">Over the years my interest for digital platforms has grown because, unlike a printed booklet, digital media offers the possibility to create interactive experiences beyond just the words and copy.</p>
+      <p class="extra-light"> I'd like to join a friendly programming community and learn how to build robust solutions to help me explore these types of digital experiences in the future.</p>
+      <p class="medium watermark">Made with grit
+        <img class="emoji" alt="tractor emoji"  src="img/emoji/tractor.png"> and storytelling <img class="emoji" alt="rainbow emoji"  src="img/emoji/rainbow.png"> <br><br><br><br>
+      </p>
     </div>
   </section>
 
