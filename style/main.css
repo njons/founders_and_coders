@@ -233,12 +233,26 @@ li {
 
 li.about {
   margin-left: auto;
-  padding-right: 0px;
 }
 
-@media(max-width: 530px) {
+@media(max-width: 500px) {
   li {
-    flex:1;
+    flex-basis: 120px;
     padding-right: 0;
+  }
+
+  li.about {
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 320px) {
+  li {
+    flex-basis: 109px;
+    padding-right: 0;
+  }
+
+  li.about {
+    margin-left: 0;
   }
 }
