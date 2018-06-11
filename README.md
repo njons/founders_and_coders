@@ -32,7 +32,7 @@ To answer the brief, I wanted to share some facts about me that are relevant to 
 - The list is then looped through (`for (var i = 0; i < links.length; i++)`) and an event listener is added to each element in the loop (`links[i].addEventListener('click', function(e)`) 
 
 The below is applied to each click event:
-- The script identifies and stores the id of the one `<section>` that is currenly displayed so that ulitimately it can be hidden (`const currSection = document.querySelector('section.show');)`
+- The script identifies and stores the id of the one `<section>` that iscurrently displayed so that ultimately it can be hidden (`const currSection = document.querySelector('section.show');)`
 - The `data-target` attribute stored in the `<button>` element is also identified and stored (`const nextSectionAttr = this.getAttribute('data-target')`) so that it can be the guide of where to go next
 - To guide the navigation, the `data-target` is used to construct an id for the next `<section>` (`const nextSection = document.querySelector[data-name='+ nextSectionAttr +']`) 
 - Finally, the `<section>` we want to navigate away from is hidden (`currSection.classList.remove('show');`) and the `<section>` we want to navigate to becomes visible (`nextSection.classList.add('show');`)
