@@ -1,6 +1,8 @@
 
 # Website for my [Founders & Coders](https://foundersandcoders.com/) application
 
+![Screenshot form website](https://github.com/njons/founders_and_coders/blob/master/screenshot_website.png)
+
 ## Brief 
 This website was created as part of the application to the 16-week javascript fullstack course at Founder & Coders. The actual brief, described on the [list of prerequisites](https://foundersandcoders.com/apply/prerequisites/) states: Tell us something interesting about yourself that will support your application. The website has to be a one-page site.
 
